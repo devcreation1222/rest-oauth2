@@ -22,3 +22,4 @@ app.use('/api', router);
 // Start the server
 app.listen(port);
 console.log('Insert beer on port ' + port);
+//
