@@ -23,7 +23,7 @@ exports.postBeers = function(req, res) {
 // Create endpoint /api/beers for GET
 exports.getBeers = function(req, res) {
     // Use the Beer model to find all beer
-    Beer.find({ userId: req.user_id }, function(err, beers) {
+    Beer.find({ userId: req.user._id }, function(err, beers) {
         if (err)
             res.send(err);
 
